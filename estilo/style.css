@@ -1,0 +1,175 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+@font-face  {
+    font-family: 'fonte';
+    src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+:root{
+    /* ## Cores */
+
+/* ### Primário */
+--VermelhoClaro: hsl(0, 100%, 67%);
+--AmareloAlaranjado: hsl(39, 100%, 56%);
+--Verde-azulado: hsl(166, 100%, 37%);
+--AzulCobalto: hsl(234, 85%, 45%);
+
+/* ## Gradientes */
+
+/* fundo */
+--AzulArdosiaClaro: hsl(252, 100%, 67%); 
+--azulRoyalClaro: hsl(241, 81%, 54%);
+
+/* circulo */
+--Azulvioleta: hsla(256, 72%, 46%, 1);
+--AzulPersa: hsla(241, 72%, 46%, 0);
+
+/* Neutral */
+
+--branco: hsl(0, 0%, 100%);
+--AzulPalido: hsl(221, 100%, 96%);
+--LavandaClaro: hsl(241, 100%, 89%);
+--AzulCinzaEscuro: hsl(224, 30%, 27%);
+
+
+
+}
+body{
+    
+    font-family: fonte;
+}
+img{
+    padding-right: 10px;
+}
+.result{
+    min-width:270px ;
+    max-width:435px ;
+    height:365px ;
+    background: linear-gradient(to bottom,
+var(--AzulArdosiaClaro), var(--azulRoyalClaro));
+    text-align: center;
+    color: var(--branco);
+    border-radius: 0px 0px 25px 25px;
+    padding: 20px 0px;
+    
+}
+.rounded-circle{
+    border-radius: 50%;
+    padding: 10px;
+    background: linear-gradient(to bottom,var(--Azulvioleta),var(--AzulPersa));
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    
+}
+.rounded-circle h1{
+    padding-top: 15px;
+    font-size:2.6em ;
+    font-weight:800 ;
+}
+p{
+    font-weight: 500;
+    color:var(--LavandaClaro);
+    
+}
+#p{
+    width: 260px;
+    margin: auto;
+    
+}
+h3,h4{
+    margin: 23px ;
+}
+.caixa{
+    padding: 17px;
+    margin: 14px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    min-width: 270px;
+    max-width: 400px;
+}
+#caixa1{
+    color: var(--VermelhoClaro);
+    background-color:hsla(0, 100%, 67%,6%) ;
+}
+#caixa2{
+    color: var(--AmareloAlaranjado);
+    background-color: hsla(39, 100%, 56%,6%);
+}
+#caixa3{
+    color: var(--Verde-azulado);
+    background-color: hsla(166, 100%, 37%,6%);
+}
+#caixa4{
+    color: var(--AzulCobalto);
+    background-color:hsla(234, 85%, 45%,6%) ;
+}
+.bolde{
+    color: black;
+}
+.norm{
+    color: silver;
+}
+i{
+    display: flex;
+    font-style: normal;
+    
+}
+a{
+    padding: 17px;
+    text-align: center;
+    margin: 5px 15px 10px 5px;
+    display: block;
+    background-color: var(--AzulCinzaEscuro);
+    color: white;
+    border-radius: 40px;
+}
+@media screen and (min-width:768px){
+    .container{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0px 0px 20px #0000001f;
+        border-radius: 20px;
+    }.result{
+        height: 400px;
+        border-radius: 20px;
+        padding: 0px 20px;
+    }
+    .pontos{
+        height: 100%;
+        padding: 13px;
+    }
+    .caixa{
+        padding: 13px;
+    }
+    a{
+        margin: 10px 18px;
+        padding: 15px;
+    }
+    .rounded-circle{
+        width: 160px;
+        height: 160px;
+        font-size: 1.3em;
+        line-height: 40px;
+        padding-top: 30px;
+    }
+   #p{
+       width: 230px;
+   }
+   a:hover{
+       background-color: var(--azulRoyalClaro);
+   }
+}
+
